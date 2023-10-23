@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Bruno <span>Ribeiro</span></h1>
+        <nav>
+            <ul aria-label="Navegação primária" class="navegacao-primaria">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Porfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+
+    </header>
+    <section aria-label="seção curriculo dowload Bruno" class="section-div">
+        <div>
+            <h2>Olá</h2>
+            <h2 class="digitando">bem-vindo(a) ao meu portfólio!</h2>
+            <p>Aqui você verá algumas informações sobre mim.</p>
+            <a href="#">Dowload CV</a>
+        </div>
+        <img src="foto.png" alt="ilustrativa imagem de uma pessoa">
+    </section>
+    <main>
+        <article aria-label="seção sobre mim" class="sobre">
+            <div class="sobre_titulo">
+                <h1>Sobre mim</h1>
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <img src="foto.png" alt="imagem de uma pessoa ilustrativa">
+            <div class="sobre_conteudo">
+                <div class="sobre_texto">
+                    <h1>Quem é Bruno?</h1>
+                    <p>Olá meu nome é Bruno Luiz de Lima Ribeiro, tenho 23 anos e moro em Curitiba, no Paraná. Gosto muito de tecnologia e tenho contato desde os 3 anos de idade.
+                    Também sou entusiasta de música eletrônica, um dos meus hobbys é produzir e mixar.
+                    </p>
+                </div>
+                <div class="sobre_info">
+                    <p><i class="fa-solid fa-calendar-days"></i>Nascimento: 06 setembro 2000 - 23 anos</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Endereço: Curitiba, PR - Brasil</p>
+                    <p><i class="fa-sharp fa-solid fa-globe"></i>Línguas: Português nativo e Inglês intermediário</p>
+                    <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <section class="my_resume">
+        <div class="sobre_titulo">
+            <h1>Meu currículo</h1>
+            <p><br></p>
+            <div aria-label="Seção apenas de ilustrações de botões">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="resume_gerenico">
+            <h2 class="experience"><i class="fa-solid fa-handshake"></i>ESCOLARIDADE</h2>
+            <div class="experience_content">
+                <div>
+                    <span><br></span>
+                    <h3>Ensino médio completo</h3>
+                    <p><br></p>
+                </div>
+                <ul>
+
+                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+                    
+                </ul>
+            </div>
+            <h2 class="education"><i class="fa-solid fa-book"></i>Formação</h2>
+            <div class="education_content">
+                <div>
+                    <span>2023 - 2025</span>
+                    <h3>Cursando Análise e Desenvolvimento de Sistemas</h3>
+                    <p><br></p>
+                </div>
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="sobre_titulo">
+            <h1>Projetos</h1>
+            <p>Aqui estão alguns dos meus projetos</p>
+            <div aria-label="Seção apenas de ilustrações de botões">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="project_models">
+            <ul class="project_navegacao" aria-label="Navegação entre modelos expecificos de projetos">
+            </ul>
+        </div>
+        <a href="#">Meu Github</a>
+    </section>
+    
+    <footer>
+        <div class="sobre_titulo">
+
+            <h1>Entre em contato</h1>
+            <p>Caso queira entrar em contato comigo, me mande um e-mail</p>
+            
+                <div class="container">
+
+        <form action="processar_formulario.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
